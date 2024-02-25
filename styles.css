@@ -15,8 +15,9 @@
 */
 * {
     color:rgba(62, 66, 189, 0.78);
-    padding: 0px;
-    margin: 0px;
+    box-sizing: border-box; /*it autocompletes the rest of the content with padding*/
+    padding: 0;
+    margin: 0;
 }
 h1 {
     color:#510666c7;;
@@ -87,3 +88,4 @@ h2:hover {
 .unordered-list__li:last-child{
     font-weight: 700; /*most common are 400 and 700*/
 }
+
