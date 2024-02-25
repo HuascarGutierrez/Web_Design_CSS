@@ -35,3 +35,19 @@ h2 p{
 h2:hover {
     color: #ff0000;
 }
+.specificity li{
+    color:#ff0000;
+    color: #0d0323 !important;
+    color: #00ffff; 
+    /*it makes color first change, then a second change. but the final change does not appear. This is because !important makes it to be the most important*/
+}
+/*HIERARCHY 
+    -!important, TOP (for extreme cases)
+    -line styles, 2nd (styles in html, but not recommended)
+    -id's, 3rd
+    -classes. 4th
+    -pseudo-classes, 4th
+    -atributes, 4th
+    -elements, 5th
+    -pseudo-elements (like a), 5th
+ */
