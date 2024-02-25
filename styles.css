@@ -1,0 +1,37 @@
+/* estructure
+    selector {
+        property: value;
+    }
+    Universal - *
+    of type - element(tag)
+    class - .class
+    ID - #id
+    attribute - [attribute="value"] 
+    descendent - first-tag second-tag ... wanted-tag //works with class and id
+    pseudo class - element:action  //works with class and id
+
+    Even if it's cascade, theres some hierarchy.
+    For example, if you want to change the text color inside sections, you must erase the universal selector (*)
+*/
+* {
+    color:rgba(62, 66, 189, 0.78);
+}
+h1 {
+    color:#510666c7;;
+}
+.about {
+    color:rgba(217, 46, 214, 0.78);
+}
+#paragraph {
+    color:rgba(165, 17, 17, 0.78);
+} /*look, there is a class and also an ID called paragraph, but only ID receives the color because we used # */
+[design="beautiful"]{
+    font-style: italic;
+    color: #000000;
+}
+h2 p{
+    color:#0d0323;
+}
+h2:hover {
+    color: #ff0000;
+}
