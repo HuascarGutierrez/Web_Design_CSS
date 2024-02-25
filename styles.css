@@ -15,6 +15,8 @@
 */
 * {
     color:rgba(62, 66, 189, 0.78);
+    padding: 0px;
+    margin: 0px;
 }
 h1 {
     color:#510666c7;;
@@ -51,6 +53,9 @@ h2:hover {
     -elements, 5th
     -pseudo-elements (like a), 5th
  */
+.contact-form{
+    font-size: 6px;
+}
 .contact-form__input:first-child {
     color: #821b1b;
 }
@@ -61,5 +66,24 @@ h2:hover {
 .contact-form__input--password_active {
     color:#d2691e;
 }
+.contact-form__input--password_active {
+    color:#d2691e;
+    font-size: 5em; /*1em = 16px as default but it inherits the previous one. In this case, it inherits 6px*/
+}
 /*BEM methodology has this format, when it is differente from the rest, use - if it's a tag and -- for a name*/
 
+/*Responsive design means the design adjust to the device, it's different a desktop screen and a mobile screen*/
+
+.unordered-list__li:first-child{
+    font-size: 40px; 
+}
+.unordered-list__li:nth-child(2){
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000000;
+}
+.unordered-list__li:nth-child(3){
+    line-height: 6; /*line height means the height of the word, it divides into 2, half size up and half size down*/ 
+}
+.unordered-list__li:last-child{
+    font-weight: 700; /*most common are 400 and 700*/
+}
